@@ -6,15 +6,26 @@ skill_categories:
   - cloud_platforms
   - kubernetes
   - cicd
+  - iac
   - monitoring
+  - security
+  - programming
+  - databases
 skill_levels:
   - expert
   - proficient
-  - familiar
 filters:
+  priority_tags:
+    - leadership
+    - management
+    - kubernetes
+    - high-scale
+    - ai
   exclude_tags:
     - legacy
+    - early-career
   limit_years: 7
 options:
   highlight_achievements: true
   emphasise_leadership: true
+  max_experience_blocks: 5

@@ -7,11 +7,22 @@ from typing import Iterable, List
 from .data_models import ExperienceBlock
 
 
-def apply_experience_filters(blocks: Iterable[ExperienceBlock], *, include_tags=None, exclude_tags=None, priority_tags=None, limit_years=None, max_items=None) -> List[ExperienceBlock]:
+def apply_experience_filters(
+    blocks: Iterable[ExperienceBlock],
+    *,
+    include_tags=None,
+    exclude_tags=None,
+    priority_tags=None,
+    limit_years=None,
+    max_items=None,
+    template_key: str | None = None,
+) -> List[ExperienceBlock]:
     result: List[ExperienceBlock] = []
     current_year = datetime.now().year
 
     for block in blocks:
+        if template_key and block.hidden_for and template_key in {tag.lower() for tag in block.hidden_for}:
+            continue
         if exclude_tags and any(tag in block.tags for tag in exclude_tags):
             continue
         if include_tags and not any(tag in block.tags for tag in include_tags):
@@ -27,12 +38,19 @@ def apply_experience_filters(blocks: Iterable[ExperienceBlock], *, include_tags=
                     pass
         result.append(block)
 
-    if priority_tags:
-        priorities = set(priority_tags)
-        result.sort(key=lambda block: sum(tag in priorities for tag in block.tags), reverse=True)
+    priorities = set(priority_tags or [])
+
+    def sort_key(block: ExperienceBlock):
+        priority_score = sum(tag in priorities for tag in block.tags)
+        return (
+            0 if block.is_current() else 1,
+            -priority_score,
+            -block.start_year(),
+        )
+
+    result.sort(key=sort_key)
 
     if max_items:
         result = result[:max_items]
 
     return result
-

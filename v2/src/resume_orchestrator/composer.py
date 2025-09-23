@@ -79,5 +79,5 @@ class ResumeComposer:
             priority_tags=priority_tags,
             limit_years=limit_years,
             max_items=max_blocks,
+            template_key=config.template,
         )
-

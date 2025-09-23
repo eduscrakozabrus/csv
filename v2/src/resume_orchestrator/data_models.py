@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 from typing import Any, Dict, List, Literal, Optional
+import re
+from datetime import datetime
+
 from pydantic import BaseModel, Field, ConfigDict
 
 SkillLevel = Literal["expert", "proficient", "familiar"]
@@ -50,6 +53,7 @@ class ExperienceBlock(BaseModel):
     tags: List[str]
     responsibilities: List[str]
     achievements: List[str] = Field(default_factory=list)
+    hidden_for: List[str] = Field(default_factory=list)
 
     def matches_tags(self, include: List[str] | None, exclude: List[str] | None) -> bool:
         tags_set = set(self.tags)
@@ -58,6 +62,19 @@ class ExperienceBlock(BaseModel):
         if include and not any(tag in tags_set for tag in include):
             return False
         return True
+
+    def is_current(self) -> bool:
+        period_lower = self.period.lower()
+        return "present" in period_lower or "current" in period_lower or "current" in self.tags
+
+    def start_year(self) -> int:
+        years = re.findall(r"(19|20)\d{2}", self.period)
+        if years:
+            try:
+                return int(years[0])
+            except ValueError:
+                pass
+        return datetime.now().year
 
 
 class BlocksBundle(BaseModel):
@@ -87,4 +104,3 @@ class TemplateConfig(BaseModel):
     skill_levels: List[SkillLevel]
     filters: Dict[str, object] = Field(default_factory=dict)
     options: Dict[str, object] = Field(default_factory=dict)
-

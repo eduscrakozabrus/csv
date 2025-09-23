@@ -7,7 +7,16 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.lib.enums import TA_CENTER
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import (
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+    Table,
+    TableStyle,
+    ListFlowable,
+    ListItem,
+    HRFlowable,
+)
 
 from ..composer import ComposedResume
 from .base import Exporter, register_exporter
@@ -57,6 +66,16 @@ class PdfExporter(Exporter):
         )
         styles.add(
             ParagraphStyle(
+                name="Contacts",
+                parent=styles["BodyText"],
+                fontSize=10,
+                leading=12,
+                alignment=TA_CENTER,
+                textColor=colors.HexColor("#3d464f"),
+            )
+        )
+        styles.add(
+            ParagraphStyle(
                 name="Section",
                 parent=styles["Heading2"],
                 fontSize=14,
@@ -71,6 +90,25 @@ class PdfExporter(Exporter):
                 parent=styles["BodyText"],
                 fontSize=10,
                 leading=14,
+            )
+        )
+        styles.add(
+            ParagraphStyle(
+                name="BodySmall",
+                parent=styles["Body"],
+                fontSize=9,
+                leading=12,
+                textColor=colors.HexColor("#4f5b66"),
+            )
+        )
+        styles.add(
+            ParagraphStyle(
+                name="BodyItalic",
+                parent=styles["Body"],
+                fontSize=10,
+                leading=13,
+                textColor=colors.HexColor("#1a1a1a"),
+                fontName="Times-Italic",
             )
         )
         styles.add(
@@ -91,8 +129,9 @@ class PdfExporter(Exporter):
         story.append(Paragraph(personal["name"], styles["Name"]))
         story.append(Paragraph(personal["headline"], styles["Headline"]))
         contacts = " | ".join(f"{k.title()}: {v}" for k, v in personal["contacts"].items())
-        story.append(Paragraph(contacts, styles["Body"]))
-        story.append(Spacer(1, 8 * mm))
+        story.append(Paragraph(contacts, styles["Contacts"]))
+        story.append(HRFlowable(width="100%", thickness=1, lineCap="round", color=colors.HexColor("#d0d6dc")))
+        story.append(Spacer(1, 6 * mm))
 
         story.append(Paragraph("PROFESSIONAL SUMMARY", styles["Section"]))
         story.append(Paragraph(resume.summary, styles["Body"]))
@@ -111,7 +150,7 @@ class PdfExporter(Exporter):
         table_data = []
         for category, skills in resume.skills.items():
             table_data.append(
-                [Paragraph(f"<b>{category}</b>", styles["Body"]), Paragraph(", ".join(skills), styles["Body"])]
+                [Paragraph(f"<b>{category}</b>", styles["Body"]), Paragraph(", ".join(skills), styles["BodySmall"])]
             )
         if not table_data:
             return []
@@ -130,15 +169,46 @@ class PdfExporter(Exporter):
 
     def _experience_blocks(self, resume: ComposedResume, styles):
         elements = []
+        options = resume.meta.get("options", {})
+
         for idx, block in enumerate(resume.experience):
             elements.append(Paragraph(f"{block.title}", styles["ExperienceTitle"]))
-            elements.append(Paragraph(f"{block.company} | {block.period}", styles["Body"]))
-            for resp in block.responsibilities:
-                elements.append(Paragraph(f"• {resp}", styles["Body"]))
-            if block.achievements and resume.meta.get("options", {}).get("highlight_achievements", True):
-                for achievement in block.achievements:
-                    elements.append(Paragraph(f"→ {achievement}", styles["Body"]))
-            if idx < len(resume.experience) - 1:
-                elements.append(Spacer(1, 4 * mm))
-        return elements
+            elements.append(Paragraph(f"{block.company} | {block.period}", styles["BodySmall"]))
 
+            responsibilities = [
+                ListItem(Paragraph(item, styles["Body"]), leftIndent=4 * mm)
+                for item in block.responsibilities
+            ]
+            if responsibilities:
+                elements.append(
+                    ListFlowable(
+                        responsibilities,
+                        bulletType="bullet",
+                        start="•",
+                        bulletFontName=styles["Body"].fontName,
+                        bulletFontSize=styles["Body"].fontSize,
+                        bulletColor=colors.HexColor("#2c3e50"),
+                        leftIndent=4 * mm,
+                    )
+                )
+
+            if block.achievements and options.get("highlight_achievements", True):
+                ach_items = [
+                    ListItem(Paragraph(text, styles["BodyItalic"]), leftIndent=6 * mm)
+                    for text in block.achievements
+                ]
+                elements.append(
+                    ListFlowable(
+                        ach_items,
+                        bulletType="bullet",
+                        start="→",
+                        bulletFontName=styles["BodyItalic"].fontName,
+                        bulletFontSize=styles["BodyItalic"].fontSize,
+                        bulletColor=colors.HexColor("#1a7f9f"),
+                        leftIndent=6 * mm,
+                    )
+                )
+
+            if idx < len(resume.experience) - 1:
+                elements.append(Spacer(1, 5 * mm))
+        return elements

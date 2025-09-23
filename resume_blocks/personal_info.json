@@ -1,0 +1,23 @@
+{
+  "personal_info": {
+    "name": "Pavel Schekin",
+    "title_variants": {
+      "senior": "Senior DevOps Engineer",
+      "lead": "Lead DevOps Engineer",
+      "sre": "Site Reliability Engineer",
+      "platform": "Platform Engineer",
+      "cloud": "Cloud Infrastructure Engineer",
+      "kubernetes": "Kubernetes Platform Engineer"
+    },
+    "contacts": {
+      "telegram": "@cqrsdevops",
+      "linkedin": "linkedin.com/in/pavelschekin"
+    },
+    "availability": {
+      "notice_period": "2 weeks",
+      "work_format": "Remote / Hybrid",
+      "contract_types": ["B2B", "Contract", "Full-time"],
+      "crypto_payments": true
+    }
+  }
+}

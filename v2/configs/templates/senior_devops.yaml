@@ -1,0 +1,20 @@
+template: senior_devops_standard
+name: "Senior DevOps Engineer – Enterprise"
+headline_variant: senior
+summary_key: senior_devops
+skill_categories:
+  - cloud_platforms
+  - kubernetes
+  - cicd
+  - monitoring
+skill_levels:
+  - expert
+  - proficient
+  - familiar
+filters:
+  exclude_tags:
+    - legacy
+  limit_years: 7
+options:
+  highlight_achievements: true
+  emphasise_leadership: true

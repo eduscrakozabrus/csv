@@ -1,0 +1,44 @@
+{
+  "professional_summaries": {
+    "senior_devops": {
+      "title": "Senior DevOps Engineer",
+      "content": "Experienced DevOps Engineer with 8+ years designing and implementing scalable cloud infrastructure. Expert in Kubernetes orchestration, CI/CD pipelines, and infrastructure automation. Proven track record of optimizing costs and improving system reliability for high-load applications.",
+      "tags": ["devops", "mid-level", "cloud", "kubernetes"]
+    },
+    "lead_devops": {
+      "title": "Lead DevOps Engineer", 
+      "content": "Results-driven Lead DevOps Engineer with 20+ years in IT and 8+ years specializing in DevOps practices. Expert in designing fault-tolerant cloud solutions with focus on security and compliance. Strong leadership experience building and mentoring DevOps teams while delivering enterprise-scale infrastructure.",
+      "tags": ["devops", "lead", "senior", "management"]
+    },
+    "sre_focused": {
+      "title": "Site Reliability Engineer",
+      "content": "Dedicated SRE with extensive experience ensuring 99.9%+ uptime for critical production systems. Specialized in implementing robust monitoring, alerting, and incident response procedures. Expert in Kubernetes, cloud platforms, and automating reliability through code.",
+      "tags": ["sre", "reliability", "monitoring", "kubernetes"]
+    },
+    "platform_engineer": {
+      "title": "Platform Engineer",
+      "content": "Platform Engineer passionate about building developer-friendly infrastructure platforms. Experienced in creating self-service deployment pipelines, implementing GitOps workflows, and standardizing cloud-native architectures. Focus on empowering development teams through automation.",
+      "tags": ["platform", "gitops", "automation", "developer-experience"]
+    },
+    "fintech_focused": {
+      "title": "DevOps Engineer - FinTech",
+      "content": "Security-focused DevOps Engineer with recent experience in banking and financial services. Expert in implementing compliant infrastructure meeting regulatory requirements. Specialized in high-availability payment systems and secure cloud architectures.",
+      "tags": ["fintech", "security", "compliance", "banking"]
+    },
+    "startup_focused": {
+      "title": "DevOps Engineer - Startups",
+      "content": "Versatile DevOps Engineer thriving in fast-paced startup environments. Experienced in building infrastructure from scratch, optimizing costs, and scaling systems from MVP to millions of users. Strong focus on pragmatic solutions and rapid iteration.",
+      "tags": ["startup", "agile", "cost-optimization", "scaling"]
+    },
+    "ai_infrastructure": {
+      "title": "DevOps Engineer - AI/ML",
+      "content": "Modern DevOps Engineer specializing in AI/ML infrastructure and cloud-native solutions. Expert in hybrid cloud architectures, microservices orchestration, and implementing cutting-edge monitoring with VictoriaMetrics stack. Proven experience supporting AI workloads and customer support automation platforms.",
+      "tags": ["ai", "ml", "modern", "hybrid-cloud", "golang"]
+    },
+    "blockchain_infrastructure": {
+      "title": "DevOps Engineer - Blockchain",
+      "content": "Specialized DevOps Engineer with deep expertise in blockchain infrastructure and high-performance distributed systems. Expert in orchestrating 100+ blockchain networks, managing 60k+ RPS infrastructure, and building scalable API access layers for blockchain data. Proven experience with multi-chain ecosystems and crypto-native technologies.",
+      "tags": ["blockchain", "crypto", "distributed-systems", "high-rps", "web3"]
+    }
+  }
+}

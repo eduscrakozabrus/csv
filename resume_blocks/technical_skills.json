@@ -1,0 +1,151 @@
+{
+  "technical_skills": {
+    "cloud_platforms": {
+      "category": "Cloud Platforms",
+      "skills": {
+        "expert": ["AWS (EKS, IAM, ECS, Lambda)", "GCP (GKE, BigQuery)"],
+        "proficient": ["DigitalOcean", "OpenShift"],
+        "familiar": ["Azure", "Hetzner"]
+      }
+    },
+    "kubernetes": {
+      "category": "Container Orchestration",
+      "skills": {
+        "expert": ["Kubernetes", "Helm", "ArgoCD"],
+        "proficient": ["K3s", "Tekton", "OpenShift"],
+        "familiar": ["Istio", "Kubespray"]
+      }
+    },
+    "cicd": {
+      "category": "CI/CD",
+      "skills": {
+        "expert": ["GitLab CI", "ArgoCD (GitOps)"],
+        "proficient": ["GitHub Actions", "Jenkins"],
+        "familiar": ["Tekton", "FluxCD"]
+      }
+    },
+    "iac": {
+      "category": "Infrastructure as Code",
+      "skills": {
+        "expert": ["Terraform", "Ansible"],
+        "proficient": ["Helm Charts"],
+        "familiar": ["CloudFormation", "Pulumi"]
+      }
+    },
+    "monitoring": {
+      "category": "Monitoring & Observability",
+      "skills": {
+        "expert": ["Prometheus", "Grafana", "VictoriaMetrics", "VictoriaLogs"],
+        "proficient": ["DataDog", "ELK Stack", "Alertmanager"],
+        "familiar": ["Loki", "Jaeger"]
+      }
+    },
+    "programming": {
+      "category": "Programming Languages", 
+      "skills": {
+        "proficient": ["Python", "Bash", "Go", "Ruby"],
+        "familiar": ["Node.js", "Java", "JavaScript"]
+      }
+    },
+    "scripting": {
+      "category": "Scripting & Automation",
+      "skills": {
+        "expert": ["Bash", "Python"],
+        "proficient": ["Shell Scripting", "PowerShell"],
+        "familiar": ["Perl", "AWK"]
+      }
+    },
+    "databases": {
+      "category": "Databases",
+      "skills": {
+        "expert": ["PostgreSQL", "MySQL"],
+        "proficient": ["MongoDB", "Redis"],
+        "familiar": ["MSSQL", "Cloudnative-pg"]
+      }
+    },
+    "messaging": {
+      "category": "Message Queues",
+      "skills": {
+        "proficient": ["RabbitMQ", "Redis"],
+        "familiar": ["Kafka", "NATS"]
+      }
+    },
+    "os": {
+      "category": "Operating Systems",
+      "skills": {
+        "expert": ["Linux (Ubuntu, CentOS, SUSE, Rocky Linux)"],
+        "proficient": ["macOS", "Windows Server"],
+        "familiar": ["FreeBSD", "Alpine Linux"]
+      }
+    },
+    "containerization": {
+      "category": "Containerization",
+      "skills": {
+        "expert": ["Docker", "Docker Compose"],
+        "proficient": ["Podman", "Container Registry"],
+        "familiar": ["Buildah", "Skopeo"]
+      }
+    },
+    "security": {
+      "category": "Security & Compliance",
+      "skills": {
+        "proficient": ["IAM", "SSL/TLS", "Network Security", "Vault", "External Secrets"],
+        "familiar": ["PCI DSS", "GDPR", "SOC2"]
+      }
+    },
+    "backup_recovery": {
+      "category": "Backup & Recovery",
+      "skills": {
+        "proficient": ["Kubernetes Backup Solutions", "Disaster Recovery"],
+        "familiar": ["Velero", "Restic"]
+      }
+    },
+    "ai_ml": {
+      "category": "AI/ML Infrastructure",
+      "skills": {
+        "proficient": ["AI API Integration", "Local Inference Setup", "AI Workload Orchestration"],
+        "familiar": ["Model Deployment", "GPU Clusters", "ML Pipelines"]
+      }
+    },
+    "networking": {
+      "category": "Networking",
+      "skills": {
+        "proficient": ["TCP/IP", "DNS", "Load Balancers", "VPN"],
+        "familiar": ["BGP", "VLAN", "Firewall Configuration"]
+      }
+    },
+    "web_servers": {
+      "category": "Web Servers & Proxies",
+      "skills": {
+        "proficient": ["Nginx", "Apache", "HAProxy"],
+        "familiar": ["Traefik", "Envoy", "Caddy"]
+      }
+    },
+    "blockchain": {
+      "category": "Blockchain Infrastructure",
+      "skills": {
+        "expert": ["Multi-chain Network Orchestration", "Blockchain API Infrastructure"],
+        "proficient": ["High-RPS Distributed Systems", "Blockchain Data Access"],
+        "familiar": ["Validator Management", "DeFi Infrastructure", "Web3 APIs"]
+      }
+    },
+    "high_performance": {
+      "category": "High-Performance Systems",
+      "skills": {
+        "expert": ["60k+ RPS Infrastructure", "Distributed Systems"],
+        "proficient": ["Load Testing", "Performance Optimization"],
+        "familiar": ["CDN Configuration", "Caching Strategies"]
+      }
+    }
+  },
+  "skill_presets": {
+    "senior_devops": ["cloud_platforms", "kubernetes", "cicd", "iac", "monitoring", "databases", "security"],
+    "sre": ["kubernetes", "monitoring", "cloud_platforms", "scripting", "databases", "backup_recovery"],
+    "platform_engineer": ["kubernetes", "cicd", "iac", "cloud_platforms", "containerization"],
+    "fintech": ["cloud_platforms", "kubernetes", "security", "databases", "monitoring"],
+    "startup": ["cloud_platforms", "kubernetes", "cicd", "iac", "scripting", "containerization"],
+    "ai_startup": ["cloud_platforms", "kubernetes", "monitoring", "ai_ml", "scripting", "security"],
+    "fullstack_devops": ["containerization", "scripting", "os", "web_servers", "databases", "networking"],
+    "blockchain_startup": ["blockchain", "high_performance", "cloud_platforms", "kubernetes", "monitoring", "databases"]
+  }
+}

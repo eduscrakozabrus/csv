@@ -1,0 +1,100 @@
+{
+  "resume_templates": {
+    "senior_devops_standard": {
+      "name": "Senior DevOps Engineer - Standard",
+      "profile": "senior_devops",
+      "experience_filter": {
+        "exclude_tags": ["legacy", "development"],
+        "limit_years": 7,
+        "highlight_tags": ["kubernetes", "cloud", "cicd"]
+      },
+      "skills_preset": "senior_devops",
+      "skills_levels": ["expert", "proficient"],
+      "target_length": "2_pages"
+    },
+    "fintech_focused": {
+      "name": "DevOps Engineer - FinTech",
+      "profile": "fintech_focused",
+      "experience_filter": {
+        "priority_tags": ["fintech", "security", "high-load"],
+        "exclude_tags": ["legacy"],
+        "limit_years": 5
+      },
+      "skills_preset": "fintech",
+      "skills_levels": ["expert", "proficient"],
+      "highlight_compliance": true
+    },
+    "sre_position": {
+      "name": "Site Reliability Engineer",
+      "profile": "sre_focused",
+      "experience_filter": {
+        "priority_tags": ["monitoring", "high-scale", "kubernetes"],
+        "exclude_tags": ["development", "legacy"]
+      },
+      "skills_preset": "sre",
+      "skills_levels": ["expert", "proficient"],
+      "highlight_oncall": true
+    },
+    "startup_friendly": {
+      "name": "DevOps Engineer - Startup",
+      "profile": "startup_focused",
+      "experience_filter": {
+        "priority_tags": ["startup", "iac", "scaling"],
+        "exclude_tags": ["legacy"],
+        "limit_years": 5
+      },
+      "skills_preset": "startup",
+      "skills_levels": ["expert", "proficient"],
+      "highlight_versatility": true
+    },
+    "lead_position": {
+      "name": "Lead DevOps Engineer",
+      "profile": "lead_devops",
+      "experience_filter": {
+        "include_all": true,
+        "highlight_tags": ["lead", "management", "architecture"]
+      },
+      "skills_preset": "senior_devops",
+      "skills_levels": ["expert", "proficient"],
+      "highlight_leadership": true
+    },
+    "ai_startup_modern": {
+      "name": "DevOps Engineer - AI/Modern Tech",
+      "profile": "ai_infrastructure",
+      "experience_filter": {
+        "priority_tags": ["ai", "current", "startup", "golang", "hybrid-cloud"],
+        "exclude_tags": ["legacy"],
+        "limit_years": 4
+      },
+      "skills_preset": "ai_startup",
+      "skills_levels": ["expert", "proficient"],
+      "highlight_modern_tech": true
+    },
+    "junior_mid_devops": {
+      "name": "DevOps Engineer - Junior/Mid Level",
+      "profile": "senior_devops",
+      "experience_filter": {
+        "priority_tags": ["early-career", "fullstack", "devops"],
+        "exclude_tags": ["legacy"],
+        "limit_years": 6,
+        "include_early_career": true
+      },
+      "skills_preset": "fullstack_devops",
+      "skills_levels": ["expert", "proficient", "familiar"],
+      "highlight_growth": true
+    },
+    "blockchain_startup": {
+      "name": "DevOps Engineer - Blockchain/Web3",
+      "profile": "blockchain_infrastructure",
+      "experience_filter": {
+        "priority_tags": ["blockchain", "microservices", "high-scale", "aws"],
+        "exclude_tags": ["legacy", "fintech"],
+        "limit_years": 5,
+        "highlight_tags": ["blockchain", "distributed-systems"]
+      },
+      "skills_preset": "blockchain_startup",
+      "skills_levels": ["expert", "proficient"],
+      "highlight_blockchain": true
+    }
+  }
+}

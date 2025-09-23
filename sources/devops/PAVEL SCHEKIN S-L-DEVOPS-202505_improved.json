@@ -1,0 +1,179 @@
+{
+  "personal_info": {
+    "phone": "2024",
+    "telegram": "@cqrsdevops",
+    "location": "Warsaw / Minsk",
+    "name": "PAVEL SCHEKIN"
+  },
+  "skills": {
+    "cloud": [],
+    "kubernetes": [],
+    "cicd": [],
+    "iac": [],
+    "monitoring": [],
+    "programming": [],
+    "frontend": [],
+    "backend": [],
+    "databases": [],
+    "os": [],
+    "other": []
+  },
+  "experience": [
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Financial Institution",
+      "period": "2024 – 2025",
+      "responsibilities": [
+        "• Management and optimization of OpenShift infrastructure for high-load banking",
+        "• Orchestration of CI/CD pipelines using Tekton and ArgoCD",
+        "• Implementation of API Gateway (3scale) for centralized API management",
+        "• Development and support of Helm charts for banking projects",
+        "• Participation in migration to Kubernetes, resulting in improved performance and reduced"
+      ]
+    },
+    {
+      "title": "Lead DevOps",
+      "company": "Blockchain Service Provider",
+      "period": "2023 – 2024",
+      "responsibilities": [
+        "• Created entire infrastructure from scratch using Infrastructure as Code (IaC) approach",
+        "• Development and maintenance of Terraform modules for automatic cloud infrastructure",
+        "• Using Ansible for bare-metal server configuration and routine task automation",
+        "• Implementation of GitOps with ArgoCD for deployment automation and environment",
+        "• Infrastructure management on DigitalOcean and bare-metal servers in dev/prod",
+        "• Deployment and configuration of K3s clusters for services in blockchain networks",
+        "• Scaling services to ensure stability under high load",
+        "• Optimization of performance-to-cost ratio for blockchain infrastructure",
+        "• Automation of monitoring and alerting for critical services"
+      ]
+    },
+    {
+      "title": "Lead DevOps",
+      "company": "Online English Language School",
+      "period": "2022 – 2023",
+      "responsibilities": [
+        "• Migration from AWS ECS to EKS to improve scalability and manageability",
+        "• Implementation of GitOps approach with ArgoCD for deployment automation",
+        "• Complete configuration of infrastructure for LiveKit (WebRTC) for conducting video",
+        "• Deployment and configuration of student emotion recognition services for engagement",
+        "• Configuration of auto-scaling for high-load services (video calls, emotion analysis)",
+        "• Integration of GKE and Google BigQuery for analytics and business process automation",
+        "• Participation in Node.js and Ember.js development in collaboration with development"
+      ]
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Blockchain Project",
+      "period": "2021–2022",
+      "responsibilities": [
+        "• Infrastructure design and management for more than 400 microservices in dev and prod",
+        "• Building a complete monitoring stack from scratch (ArgoCD, Grafana, Prometheus,",
+        "• Configuration and maintenance of over 40 databases with replication to ensure high",
+        "• Resource optimization and automatic scaling configuration for blockchain validators",
+        "• Support for startups in Solana, Polkadot, and Ethereum ecosystems",
+        "• Management of AWS infrastructure with a focus on security and scalability",
+        "• Development of infrastructure solutions for blockchain games and high-load applications"
+      ]
+    },
+    {
+      "title": "Lead DevOps & Full-Stack Developer",
+      "company": "YesIT",
+      "period": "2018 – 2020",
+      "responsibilities": [
+        "• Development of SaaS platform for omnichannel customer service (Node.js, Ember.js)",
+        "• Design and deployment of trading platform on bare-metal Kubernetes with a focus on",
+        "• Team leadership and technology stack optimization (Ruby on Rails, Ember.js)"
+      ]
+    },
+    {
+      "title": "Lead Developer / Project Manager",
+      "company": "YesIT LLC",
+      "period": "2007 – 2018",
+      "responsibilities": [
+        "• Development of modular CRM on Ruby on Rails with external API integration",
+        "• Implementation of cloud solutions with Docker/Kubernetes to ensure reliability and"
+      ]
+    },
+    {
+      "title": "Lead Developer / Team Lead",
+      "company": "IT Company (ERP Solutions)",
+      "period": "2003 – 2015",
+      "responsibilities": [
+        "• Technical leadership in the development of financial management ERP systems",
+        "• Creation and implementation of comprehensive solutions for business process automation",
+        "• Management of a development team (7-20 people) and project coordination",
+        "• Interaction with customers, requirements analysis, and business process optimization"
+      ]
+    },
+    {
+      "title": "IT Specialist for Corporate Systems",
+      "company": "",
+      "period": "",
+      "responsibilities": [
+        "• Implementation and adaptation of management accounting systems to customer",
+        "• Automation of financial and business processes in companies across various industries"
+      ]
+    }
+  ],
+  "education": [],
+  "certifications": [],
+  "languages": [],
+  "technical_skills": {
+    "cloud": [],
+    "hetzner": [
+      "Kubernetes Kubespray",
+      "Helm",
+      "ArgoCD",
+      "K3s",
+      "Tekton",
+      "Istio",
+      "CI/CD GitLab CI",
+      "GitHub Actions",
+      "Jenkins",
+      "IaC Terraform",
+      "Ansible",
+      "Pulumi",
+      "Monitoring Prometheus/Grafana",
+      "ELK Stack",
+      "Loki",
+      "VictoriaMetrics",
+      "Programming Node.js",
+      "Ruby",
+      "Python",
+      "Frontend React",
+      "EmberJS",
+      "Tailwind",
+      "Foundation",
+      "Bootstrap",
+      "SvelteJS",
+      "VueJS",
+      "Backend Node.js",
+      "NestJS",
+      "Ruby on Rails",
+      "RabbitMQ",
+      "Redis",
+      "NATS",
+      "Kafka",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "MSSQL",
+      "Cloudnative-pg",
+      "Zalando"
+    ],
+    "databases": [],
+    "postgresql operator": [
+      "Operating Linux (Ubuntu",
+      "CentOS",
+      "SUSE",
+      "Proxmox",
+      "Arch)",
+      "macOS",
+      "Windows"
+    ],
+    "systems freebsd": []
+  },
+  "raw_text": "PAVEL SCHEKIN\nLead/Senior DevOps Engineer\n📍 Warsaw / Minsk | 📱 Telegram: @cqrsdevops\nPROFESSIONAL PROFILE\nExperienced Lead/Senior DevOps Engineer with over 20 years in IT. Expert in designing\nscalable and fault-tolerant cloud solutions with a focus on security (IAM, data encryption).\nSpecializing in implementing CI/CD processes and building efficient infrastructure for high-load\napplications. Possess strong leadership skills and experience in optimizing application\nperformance in close collaboration with development teams.\nAvailable for B2B contracts through. Cryptocurrency payments accepted.\nWORK EXPERIENCE\nSenior DevOps Engineer\nFinancial Institution | 2024 – 2025\n• Management and optimization of OpenShift infrastructure for high-load banking\napplications\n• Orchestration of CI/CD pipelines using Tekton and ArgoCD\n• Implementation of API Gateway (3scale) for centralized API management\n• Development and support of Helm charts for banking projects\n• Participation in migration to Kubernetes, resulting in improved performance and reduced\ninfrastructure costs\nLead DevOps\nBlockchain Service Provider | 2023 – 2024\n• Created entire infrastructure from scratch using Infrastructure as Code (IaC) approach\n• Development and maintenance of Terraform modules for automatic cloud infrastructure\ndeployment\n• Using Ansible for bare-metal server configuration and routine task automation\n• Implementation of GitOps with ArgoCD for deployment automation and environment\nreproducibility\n• Infrastructure management on DigitalOcean and bare-metal servers in dev/prod\nenvironments\n• Deployment and configuration of K3s clusters for services in blockchain networks\n• Scaling services to ensure stability under high load\n• Optimization of performance-to-cost ratio for blockchain infrastructure\n• Automation of monitoring and alerting for critical services\nLead DevOps\nOnline English Language School | 2022 – 2023\n• Migration from AWS ECS to EKS to improve scalability and manageability\n• Implementation of GitOps approach with ArgoCD for deployment automation\n• Complete configuration of infrastructure for LiveKit (WebRTC) for conducting video\nlessons from scratch\n• Deployment and configuration of student emotion recognition services for engagement\nanalytics\n• Configuration of auto-scaling for high-load services (video calls, emotion analysis)\n• Integration of GKE and Google BigQuery for analytics and business process automation\n• Participation in Node.js and Ember.js development in collaboration with development\nteams\nSenior DevOps Engineer\nBlockchain Project | 2021–2022\n• Infrastructure design and management for more than 400 microservices in dev and prod\nenvironments\n• Building a complete monitoring stack from scratch (ArgoCD, Grafana, Prometheus,\nAlertmanager)\n• Configuration and maintenance of over 40 databases with replication to ensure high\navailability\n• Resource optimization and automatic scaling configuration for blockchain validators\n• Support for startups in Solana, Polkadot, and Ethereum ecosystems\n• Management of AWS infrastructure with a focus on security and scalability\n• Development of infrastructure solutions for blockchain games and high-load applications\nLead DevOps & Full-Stack Developer\nYesIT | 2018 – 2020\n• Development of SaaS platform for omnichannel customer service (Node.js, Ember.js)\n• Design and deployment of trading platform on bare-metal Kubernetes with a focus on\nhigh availability and security\n• Team leadership and technology stack optimization (Ruby on Rails, Ember.js)\nLead Developer / Project Manager\nYesIT LLC | 2007 – 2018\n• Development of modular CRM on Ruby on Rails with external API integration\n• Implementation of cloud solutions with Docker/Kubernetes to ensure reliability and\nscalability\nLead Developer / Team Lead\nIT Company (ERP Solutions) | 2003 – 2015\n• Technical leadership in the development of financial management ERP systems\n• Creation and implementation of comprehensive solutions for business process automation\n• Management of a development team (7-20 people) and project coordination\n• Interaction with customers, requirements analysis, and business process optimization\nIT Specialist for Corporate Systems\n2000 – 2003\n• Implementation and adaptation of management accounting systems to customer\nrequirements\n• Automation of financial and business processes in companies across various industries\nTECHNICAL SKILLS\nCategory Technologies\nAWS (EKS, IAM, ECS), GCP (GKE), Azure, OpenShift, DigitalOcean,\nCloud\nHetzner\nKubernetes Kubespray,Helm, ArgoCD, K3s, Tekton, Istio\nCI/CD GitLab CI, GitHub Actions, Jenkins\nIaC Terraform, Ansible, Pulumi\nMonitoring Prometheus/Grafana, ELK Stack, Loki, VictoriaMetrics\nProgramming Node.js, Ruby, Python\nFrontend React, EmberJS, Tailwind, Foundation, Bootstrap, SvelteJS, VueJS\nBackend Node.js, NestJS, Ruby on Rails, RabbitMQ, Redis, NATS, Kafka\nPostgreSQL, MySQL, MongoDB, MSSQL, Cloudnative-pg, Zalando\nDatabases\nPostgreSQL Operator\nOperating Linux (Ubuntu, CentOS, SUSE, Proxmox, Arch), macOS, Windows,\nSystems FreeBSD\n",
+  "professional_profile": "Experienced Lead/Senior DevOps Engineer with over 20 years in IT. Expert in designing scalable and fault-tolerant cloud solutions with a focus on security (IAM, data encryption). Specializing in implementing CI/CD processes and building efficient infrastructure for high-load applications. Possess strong leadership skills and experience in optimizing application performance in close collaboration with development teams. Available for B2B contracts through. Cryptocurrency payments accepted.",
+  "source_file": "PAVEL SCHEKIN S-L-DEVOPS-202505.pdf"
+}

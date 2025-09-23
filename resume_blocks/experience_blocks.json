@@ -1,0 +1,155 @@
+{
+  "experience_blocks": [
+    {
+      "id": "exp_ai_startup_2025",
+      "title": "Senior DevOps Engineer",
+      "company": "AI Customer Support Startup",
+      "period": "2025 – Present",
+      "tags": ["ai", "startup", "golang", "kubernetes", "hybrid-cloud", "datadog", "victoriametrics", "current"],
+      "responsibilities": [
+        "Complete infrastructure deployment for AI-driven customer support platform from scratch",
+        "Hybrid cloud architecture implementation (AWS + bare-metal) with Kubernetes orchestration",
+        "Migration from DigitalOcean to hybrid infrastructure using Ansible automation",
+        "CI/CD pipeline setup with GitLab and ArgoCD for 30+ microservices",
+        "Implementation of comprehensive monitoring stack (DataDog, VictoriaMetrics, VictoriaLogs)",
+        "AI API integration and local inference infrastructure setup",
+        "Secret management with Vault and External Secrets Operator",
+        "Kubernetes backup solutions and disaster recovery procedures",
+        "K3s cluster deployment automation with Ansible",
+        "Golang-based microservices infrastructure optimization"
+      ],
+      "achievements": [
+        "Built complete production infrastructure supporting AI workloads",
+        "Reduced infrastructure costs by 40% through hybrid cloud approach",
+        "Achieved 99.9% uptime for customer support AI services",
+        "Implemented zero-downtime deployment for all 30 microservices"
+      ]
+    },
+    {
+      "id": "exp_bank_2024",
+      "title": "Senior DevOps Engineer", 
+      "company": "Financial Institution",
+      "period": "2024 – 2025",
+      "tags": ["fintech", "kubernetes", "openshift", "cicd", "security", "high-load"],
+      "responsibilities": [
+        "Management and optimization of OpenShift infrastructure for high-load banking applications",
+        "Orchestration of CI/CD pipelines using Tekton and ArgoCD",
+        "Implementation of API Gateway (3scale) for centralized API management",
+        "Development and support of Helm charts for banking projects",
+        "Participation in migration to Kubernetes, resulting in 30% performance improvement"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by 25% through optimization",
+        "Improved deployment frequency from weekly to daily releases",
+        "Zero security incidents during tenure"
+      ]
+    },
+    {
+      "id": "exp_blockchain_2023",
+      "title": "Lead DevOps",
+      "company": "Blockchain Service Provider",
+      "period": "2023 – 2024",
+      "tags": ["blockchain", "terraform", "ansible", "gitops", "iac", "startup", "web3"],
+      "responsibilities": [
+        "Created entire infrastructure from scratch for multi-chain blockchain service",
+        "Development and maintenance of Terraform modules for cloud infrastructure",
+        "Ansible automation for bare-metal server configuration",
+        "Implementation of GitOps with ArgoCD for deployment automation",
+        "Infrastructure management on DigitalOcean and bare-metal servers",
+        "Deployment and configuration of K3s clusters for blockchain networks",
+        "Performance optimization for blockchain infrastructure and API endpoints"
+      ],
+      "achievements": [
+        "Built infrastructure supporting 1M+ daily blockchain transactions",
+        "Achieved 99.95% uptime for critical blockchain services",
+        "Reduced deployment time from hours to minutes",
+        "Managed multi-chain infrastructure across various blockchain protocols"
+      ]
+    },
+    {
+      "id": "exp_edtech_2022",
+      "title": "Lead DevOps",
+      "company": "Online English Language School",
+      "period": "2022 – 2023",
+      "tags": ["aws", "gcp", "kubernetes", "gitops", "video", "scaling"],
+      "responsibilities": [
+        "Migration from AWS ECS to EKS improving scalability",
+        "GitOps implementation with ArgoCD",
+        "LiveKit (WebRTC) infrastructure for video lessons",
+        "Auto-scaling configuration for video services",
+        "GKE and Google BigQuery integration for analytics"
+      ],
+      "achievements": [
+        "Supported 10,000+ concurrent video sessions",
+        "Reduced infrastructure costs by 40%",
+        "Improved system reliability to 99.9% uptime"
+      ]
+    },
+    {
+      "id": "exp_blockchain_2021",
+      "title": "Senior DevOps Engineer",
+      "company": "Blockchain Project",
+      "period": "2021 – 2022",
+      "tags": ["microservices", "monitoring", "aws", "high-scale", "databases"],
+      "responsibilities": [
+        "Infrastructure orchestration for 100+ blockchain networks with 60k RPS",
+        "API access infrastructure for historical blockchain data",
+        "Building monitoring stack (Grafana, Prometheus, Alertmanager)",
+        "Database management with replication for high availability",
+        "AWS infrastructure management with security focus",
+        "Network orchestration for Solana, Polkadot, and Ethereum ecosystems"
+      ],
+      "achievements": [
+        "Orchestrated infrastructure processing billions in transactions",
+        "Maintained 60,000+ RPS across distributed blockchain networks",
+        "Implemented zero-downtime deployment strategies",
+        "Reduced monitoring alert noise by 70%"
+      ]
+    },
+    {
+      "id": "exp_saas_2018",
+      "title": "Full-Stack Developer & DevOps Engineer",
+      "company": "YesIT",
+      "period": "2018 – 2020",
+      "tags": ["fullstack", "kubernetes", "nodejs", "ruby", "saas", "early-career"],
+      "responsibilities": [
+        "SaaS platform development (Node.js, Ember.js)",
+        "Trading platform deployment on bare-metal Kubernetes",
+        "Infrastructure setup and basic DevOps operations",
+        "Full-stack development and system administration"
+      ],
+      "hidden_for": ["senior-only"]
+    },
+    {
+      "id": "exp_piomni_early",
+      "title": "Full-Stack Developer & DevOps Engineer",
+      "company": "Piomni Customer Support Startup",
+      "period": "2018 – 2020",
+      "tags": ["fullstack", "devops", "startup", "customer-support", "early-career"],
+      "responsibilities": [
+        "Full-stack development and DevOps operations in early-stage startup",
+        "Customer support platform development (Node.js, React)",
+        "Infrastructure deployment and CI/CD pipeline setup",
+        "Wearing multiple hats: development, operations, and system administration"
+      ],
+      "achievements": [
+        "Successfully delivered MVP customer support platform",
+        "Built complete development and deployment infrastructure"
+      ],
+      "hidden_for": ["senior-only"]
+    },
+    {
+      "id": "exp_early_career",
+      "title": "Lead Developer / Project Manager",
+      "company": "YesIT LLC",
+      "period": "2007 – 2018",
+      "tags": ["development", "management", "legacy"],
+      "responsibilities": [
+        "CRM development on Ruby on Rails",
+        "Cloud solutions with Docker/Kubernetes",
+        "Team management (7-20 people)"
+      ],
+      "hidden_for": ["junior", "mid-level", "devops-only"]
+    }
+  ]
+}

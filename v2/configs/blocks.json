@@ -1,0 +1,550 @@
+{
+  "personal_info": {
+    "name": "Pavel Schekin",
+    "title_variants": {
+      "senior": "Senior DevOps Engineer",
+      "lead": "Lead DevOps Engineer",
+      "sre": "Site Reliability Engineer",
+      "platform": "Platform Engineer",
+      "cloud": "Cloud Infrastructure Engineer",
+      "kubernetes": "Kubernetes Platform Engineer"
+    },
+    "contacts": {
+      "telegram": "@cqrsdevops",
+      "linkedin": "linkedin.com/in/pavelschekin"
+    },
+    "availability": {
+      "notice_period": "2 weeks",
+      "work_format": "Remote / Hybrid",
+      "contract_types": [
+        "B2B",
+        "Contract",
+        "Full-time"
+      ],
+      "crypto_payments": true
+    }
+  },
+  "summaries": {
+    "senior_devops": "Experienced DevOps Engineer with 8+ years designing and implementing scalable cloud infrastructure. Expert in Kubernetes orchestration, CI/CD pipelines, and infrastructure automation. Proven track record of optimizing costs and improving system reliability for high-load applications.",
+    "lead_devops": "Results-driven Lead DevOps Engineer with 20+ years in IT and 8+ years specializing in DevOps practices. Expert in designing fault-tolerant cloud solutions with focus on security and compliance. Strong leadership experience building and mentoring DevOps teams while delivering enterprise-scale infrastructure.",
+    "sre_focused": "Dedicated SRE with extensive experience ensuring 99.9%+ uptime for critical production systems. Specialized in implementing robust monitoring, alerting, and incident response procedures. Expert in Kubernetes, cloud platforms, and automating reliability through code.",
+    "platform_engineer": "Platform Engineer passionate about building developer-friendly infrastructure platforms. Experienced in creating self-service deployment pipelines, implementing GitOps workflows, and standardizing cloud-native architectures. Focus on empowering development teams through automation.",
+    "fintech_focused": "Security-focused DevOps Engineer with recent experience in banking and financial services. Expert in implementing compliant infrastructure meeting regulatory requirements. Specialized in high-availability payment systems and secure cloud architectures.",
+    "startup_focused": "Versatile DevOps Engineer thriving in fast-paced startup environments. Experienced in building infrastructure from scratch, optimizing costs, and scaling systems from MVP to millions of users. Strong focus on pragmatic solutions and rapid iteration.",
+    "ai_infrastructure": "Modern DevOps Engineer specializing in AI/ML infrastructure and cloud-native solutions. Expert in hybrid cloud architectures, microservices orchestration, and implementing cutting-edge monitoring with VictoriaMetrics stack. Proven experience supporting AI workloads and customer support automation platforms.",
+    "blockchain_infrastructure": "Specialized DevOps Engineer with deep expertise in blockchain infrastructure and high-performance distributed systems. Expert in orchestrating 100+ blockchain networks, managing 60k+ RPS infrastructure, and building scalable API access layers for blockchain data. Proven experience with multi-chain ecosystems and crypto-native technologies."
+  },
+  "skills": {
+    "cloud_platforms": {
+      "category": "Cloud Platforms",
+      "levels": {
+        "expert": [
+          "AWS (EKS, IAM, ECS, Lambda)",
+          "GCP (GKE, BigQuery)"
+        ],
+        "proficient": [
+          "DigitalOcean",
+          "OpenShift"
+        ],
+        "familiar": [
+          "Azure",
+          "Hetzner"
+        ]
+      }
+    },
+    "kubernetes": {
+      "category": "Container Orchestration",
+      "levels": {
+        "expert": [
+          "Kubernetes",
+          "Helm",
+          "ArgoCD"
+        ],
+        "proficient": [
+          "K3s",
+          "Tekton",
+          "OpenShift"
+        ],
+        "familiar": [
+          "Istio",
+          "Kubespray"
+        ]
+      }
+    },
+    "cicd": {
+      "category": "CI/CD",
+      "levels": {
+        "expert": [
+          "GitLab CI",
+          "ArgoCD (GitOps)"
+        ],
+        "proficient": [
+          "GitHub Actions",
+          "Jenkins"
+        ],
+        "familiar": [
+          "Tekton",
+          "FluxCD"
+        ]
+      }
+    },
+    "iac": {
+      "category": "Infrastructure as Code",
+      "levels": {
+        "expert": [
+          "Terraform",
+          "Ansible"
+        ],
+        "proficient": [
+          "Helm Charts"
+        ],
+        "familiar": [
+          "CloudFormation",
+          "Pulumi"
+        ]
+      }
+    },
+    "monitoring": {
+      "category": "Monitoring & Observability",
+      "levels": {
+        "expert": [
+          "Prometheus",
+          "Grafana",
+          "VictoriaMetrics",
+          "VictoriaLogs"
+        ],
+        "proficient": [
+          "DataDog",
+          "ELK Stack",
+          "Alertmanager"
+        ],
+        "familiar": [
+          "Loki",
+          "Jaeger"
+        ]
+      }
+    },
+    "programming": {
+      "category": "Programming Languages",
+      "levels": {
+        "proficient": [
+          "Python",
+          "Bash",
+          "Go",
+          "Ruby"
+        ],
+        "familiar": [
+          "Node.js",
+          "Java",
+          "JavaScript"
+        ]
+      }
+    },
+    "scripting": {
+      "category": "Scripting & Automation",
+      "levels": {
+        "expert": [
+          "Bash",
+          "Python"
+        ],
+        "proficient": [
+          "Shell Scripting",
+          "PowerShell"
+        ],
+        "familiar": [
+          "Perl",
+          "AWK"
+        ]
+      }
+    },
+    "databases": {
+      "category": "Databases",
+      "levels": {
+        "expert": [
+          "PostgreSQL",
+          "MySQL"
+        ],
+        "proficient": [
+          "MongoDB",
+          "Redis"
+        ],
+        "familiar": [
+          "MSSQL",
+          "Cloudnative-pg"
+        ]
+      }
+    },
+    "messaging": {
+      "category": "Message Queues",
+      "levels": {
+        "proficient": [
+          "RabbitMQ",
+          "Redis"
+        ],
+        "familiar": [
+          "Kafka",
+          "NATS"
+        ]
+      }
+    },
+    "os": {
+      "category": "Operating Systems",
+      "levels": {
+        "expert": [
+          "Linux (Ubuntu, CentOS, SUSE, Rocky Linux)"
+        ],
+        "proficient": [
+          "macOS",
+          "Windows Server"
+        ],
+        "familiar": [
+          "FreeBSD",
+          "Alpine Linux"
+        ]
+      }
+    },
+    "containerization": {
+      "category": "Containerization",
+      "levels": {
+        "expert": [
+          "Docker",
+          "Docker Compose"
+        ],
+        "proficient": [
+          "Podman",
+          "Container Registry"
+        ],
+        "familiar": [
+          "Buildah",
+          "Skopeo"
+        ]
+      }
+    },
+    "security": {
+      "category": "Security & Compliance",
+      "levels": {
+        "proficient": [
+          "IAM",
+          "SSL/TLS",
+          "Network Security",
+          "Vault",
+          "External Secrets"
+        ],
+        "familiar": [
+          "PCI DSS",
+          "GDPR",
+          "SOC2"
+        ]
+      }
+    },
+    "backup_recovery": {
+      "category": "Backup & Recovery",
+      "levels": {
+        "proficient": [
+          "Kubernetes Backup Solutions",
+          "Disaster Recovery"
+        ],
+        "familiar": [
+          "Velero",
+          "Restic"
+        ]
+      }
+    },
+    "ai_ml": {
+      "category": "AI/ML Infrastructure",
+      "levels": {
+        "proficient": [
+          "AI API Integration",
+          "Local Inference Setup",
+          "AI Workload Orchestration"
+        ],
+        "familiar": [
+          "Model Deployment",
+          "GPU Clusters",
+          "ML Pipelines"
+        ]
+      }
+    },
+    "networking": {
+      "category": "Networking",
+      "levels": {
+        "proficient": [
+          "TCP/IP",
+          "DNS",
+          "Load Balancers",
+          "VPN"
+        ],
+        "familiar": [
+          "BGP",
+          "VLAN",
+          "Firewall Configuration"
+        ]
+      }
+    },
+    "web_servers": {
+      "category": "Web Servers & Proxies",
+      "levels": {
+        "proficient": [
+          "Nginx",
+          "Apache",
+          "HAProxy"
+        ],
+        "familiar": [
+          "Traefik",
+          "Envoy",
+          "Caddy"
+        ]
+      }
+    },
+    "blockchain": {
+      "category": "Blockchain Infrastructure",
+      "levels": {
+        "expert": [
+          "Multi-chain Network Orchestration",
+          "Blockchain API Infrastructure"
+        ],
+        "proficient": [
+          "High-RPS Distributed Systems",
+          "Blockchain Data Access"
+        ],
+        "familiar": [
+          "Validator Management",
+          "DeFi Infrastructure",
+          "Web3 APIs"
+        ]
+      }
+    },
+    "high_performance": {
+      "category": "High-Performance Systems",
+      "levels": {
+        "expert": [
+          "60k+ RPS Infrastructure",
+          "Distributed Systems"
+        ],
+        "proficient": [
+          "Load Testing",
+          "Performance Optimization"
+        ],
+        "familiar": [
+          "CDN Configuration",
+          "Caching Strategies"
+        ]
+      }
+    }
+  },
+  "experience": [
+    {
+      "id": "exp_ai_startup_2025",
+      "title": "Senior DevOps Engineer",
+      "company": "AI Customer Support Startup",
+      "period": "2025 – Present",
+      "tags": [
+        "ai",
+        "startup",
+        "golang",
+        "kubernetes",
+        "hybrid-cloud",
+        "datadog",
+        "victoriametrics",
+        "current"
+      ],
+      "responsibilities": [
+        "Complete infrastructure deployment for AI-driven customer support platform from scratch",
+        "Hybrid cloud architecture implementation (AWS + bare-metal) with Kubernetes orchestration",
+        "Migration from DigitalOcean to hybrid infrastructure using Ansible automation",
+        "CI/CD pipeline setup with GitLab and ArgoCD for 30+ microservices",
+        "Implementation of comprehensive monitoring stack (DataDog, VictoriaMetrics, VictoriaLogs)",
+        "AI API integration and local inference infrastructure setup",
+        "Secret management with Vault and External Secrets Operator",
+        "Kubernetes backup solutions and disaster recovery procedures",
+        "K3s cluster deployment automation with Ansible",
+        "Golang-based microservices infrastructure optimization"
+      ],
+      "achievements": [
+        "Built complete production infrastructure supporting AI workloads",
+        "Reduced infrastructure costs by 40% through hybrid cloud approach",
+        "Achieved 99.9% uptime for customer support AI services",
+        "Implemented zero-downtime deployment for all 30 microservices"
+      ]
+    },
+    {
+      "id": "exp_bank_2024",
+      "title": "Senior DevOps Engineer",
+      "company": "Financial Institution",
+      "period": "2024 – 2025",
+      "tags": [
+        "fintech",
+        "kubernetes",
+        "openshift",
+        "cicd",
+        "security",
+        "high-load"
+      ],
+      "responsibilities": [
+        "Management and optimization of OpenShift infrastructure for high-load banking applications",
+        "Orchestration of CI/CD pipelines using Tekton and ArgoCD",
+        "Implementation of API Gateway (3scale) for centralized API management",
+        "Development and support of Helm charts for banking projects",
+        "Participation in migration to Kubernetes, resulting in 30% performance improvement"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by 25% through optimization",
+        "Improved deployment frequency from weekly to daily releases",
+        "Zero security incidents during tenure"
+      ]
+    },
+    {
+      "id": "exp_blockchain_2023",
+      "title": "Lead DevOps",
+      "company": "Blockchain Service Provider",
+      "period": "2023 – 2024",
+      "tags": [
+        "blockchain",
+        "terraform",
+        "ansible",
+        "gitops",
+        "iac",
+        "startup",
+        "web3"
+      ],
+      "responsibilities": [
+        "Created entire infrastructure from scratch for multi-chain blockchain service",
+        "Development and maintenance of Terraform modules for cloud infrastructure",
+        "Ansible automation for bare-metal server configuration",
+        "Implementation of GitOps with ArgoCD for deployment automation",
+        "Infrastructure management on DigitalOcean and bare-metal servers",
+        "Deployment and configuration of K3s clusters for blockchain networks",
+        "Performance optimization for blockchain infrastructure and API endpoints"
+      ],
+      "achievements": [
+        "Built infrastructure supporting 1M+ daily blockchain transactions",
+        "Achieved 99.95% uptime for critical blockchain services",
+        "Reduced deployment time from hours to minutes",
+        "Managed multi-chain infrastructure across various blockchain protocols"
+      ]
+    },
+    {
+      "id": "exp_edtech_2022",
+      "title": "Lead DevOps",
+      "company": "Online English Language School",
+      "period": "2022 – 2023",
+      "tags": [
+        "aws",
+        "gcp",
+        "kubernetes",
+        "gitops",
+        "video",
+        "scaling"
+      ],
+      "responsibilities": [
+        "Migration from AWS ECS to EKS improving scalability",
+        "GitOps implementation with ArgoCD",
+        "LiveKit (WebRTC) infrastructure for video lessons",
+        "Auto-scaling configuration for video services",
+        "GKE and Google BigQuery integration for analytics"
+      ],
+      "achievements": [
+        "Supported 10,000+ concurrent video sessions",
+        "Reduced infrastructure costs by 40%",
+        "Improved system reliability to 99.9% uptime"
+      ]
+    },
+    {
+      "id": "exp_blockchain_2021",
+      "title": "Senior DevOps Engineer",
+      "company": "Blockchain Project",
+      "period": "2021 – 2022",
+      "tags": [
+        "microservices",
+        "monitoring",
+        "aws",
+        "high-scale",
+        "databases"
+      ],
+      "responsibilities": [
+        "Infrastructure orchestration for 100+ blockchain networks with 60k RPS",
+        "API access infrastructure for historical blockchain data",
+        "Building monitoring stack (Grafana, Prometheus, Alertmanager)",
+        "Database management with replication for high availability",
+        "AWS infrastructure management with security focus",
+        "Network orchestration for Solana, Polkadot, and Ethereum ecosystems"
+      ],
+      "achievements": [
+        "Orchestrated infrastructure processing billions in transactions",
+        "Maintained 60,000+ RPS across distributed blockchain networks",
+        "Implemented zero-downtime deployment strategies",
+        "Reduced monitoring alert noise by 70%"
+      ]
+    },
+    {
+      "id": "exp_saas_2018",
+      "title": "Full-Stack Developer & DevOps Engineer",
+      "company": "YesIT",
+      "period": "2018 – 2020",
+      "tags": [
+        "fullstack",
+        "kubernetes",
+        "nodejs",
+        "ruby",
+        "saas",
+        "early-career"
+      ],
+      "responsibilities": [
+        "SaaS platform development (Node.js, Ember.js)",
+        "Trading platform deployment on bare-metal Kubernetes",
+        "Infrastructure setup and basic DevOps operations",
+        "Full-stack development and system administration"
+      ],
+      "hidden_for": [
+        "senior-only"
+      ]
+    },
+    {
+      "id": "exp_piomni_early",
+      "title": "Full-Stack Developer & DevOps Engineer",
+      "company": "Piomni Customer Support Startup",
+      "period": "2018 – 2020",
+      "tags": [
+        "fullstack",
+        "devops",
+        "startup",
+        "customer-support",
+        "early-career"
+      ],
+      "responsibilities": [
+        "Full-stack development and DevOps operations in early-stage startup",
+        "Customer support platform development (Node.js, React)",
+        "Infrastructure deployment and CI/CD pipeline setup",
+        "Wearing multiple hats: development, operations, and system administration"
+      ],
+      "achievements": [
+        "Successfully delivered MVP customer support platform",
+        "Built complete development and deployment infrastructure"
+      ],
+      "hidden_for": [
+        "senior-only"
+      ]
+    },
+    {
+      "id": "exp_early_career",
+      "title": "Lead Developer / Project Manager",
+      "company": "YesIT LLC",
+      "period": "2007 – 2018",
+      "tags": [
+        "development",
+        "management",
+        "legacy"
+      ],
+      "responsibilities": [
+        "CRM development on Ruby on Rails",
+        "Cloud solutions with Docker/Kubernetes",
+        "Team management (7-20 people)"
+      ],
+      "hidden_for": [
+        "junior",
+        "mid-level",
+        "devops-only"
+      ]
+    }
+  ]
+}

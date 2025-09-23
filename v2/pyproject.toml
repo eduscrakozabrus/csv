@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-orchestrator"
+version = "0.1.0"
+description = "Config-driven resume assembly toolkit"
+authors = [
+  { name = "Pavel Schekin", email = "pavel@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pydantic>=2.6",
+  "PyYAML>=6.0",
+  "reportlab>=4.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "rich>=13.0"
+]
+
+[project.scripts]
+resume-cli = "resume_orchestrator.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

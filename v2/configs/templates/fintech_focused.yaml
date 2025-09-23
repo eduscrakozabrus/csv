@@ -1,0 +1,26 @@
+template: fintech_focused
+name: "DevOps Engineer – FinTech Compliance"
+headline_variant: senior
+summary_key: fintech_focused
+skill_categories:
+  - cloud_platforms
+  - kubernetes
+  - cicd
+  - monitoring
+skill_levels:
+  - expert
+  - proficient
+filters:
+  include_tags:
+    - fintech
+    - pci
+  priority_tags:
+    - security
+    - pci
+    - aws
+  exclude_tags:
+    - legacy
+  limit_years: 6
+options:
+  highlight_achievements: true
+  annotate_compliance: true

@@ -1,31 +1,40 @@
 template: senior_devops_standard
-name: "Senior DevOps Engineer – Enterprise"
+name: "Senior DevOps Engineer \u2013 Enterprise"
 headline_variant: senior
 summary_key: senior_devops
 skill_categories:
-  - cloud_platforms
-  - kubernetes
-  - cicd
-  - iac
-  - monitoring
-  - security
-  - programming
-  - databases
+- cloud_platforms
+- kubernetes
+- cicd
+- iac
+- monitoring
+- security
+- resilience
+- networking
+- programming
+- databases
 skill_levels:
-  - expert
-  - proficient
+- expert
+- proficient
 filters:
   priority_tags:
-    - leadership
-    - management
-    - kubernetes
-    - high-scale
-    - ai
+  - leadership
+  - management
+  - kubernetes
+  - high-scale
+  - ai
   exclude_tags:
-    - legacy
-    - early-career
+  - legacy
+  - early-career
   limit_years: 7
 options:
   highlight_achievements: true
   emphasise_leadership: true
   max_experience_blocks: 5
+closing_statement: "I\u2019m looking for a team where I can apply end-to-end infrastructure\
+  \ expertise and stay genuinely useful\u2014whether as a hands-on senior engineer\
+  \ or leading the effort. I thrive when there\u2019s room to create real business\
+  \ value, understand stakeholders, and collaborate openly to turn ideas into reliable\
+  \ platforms."
+output:
+  filename: paul-shchokin.senior-devops

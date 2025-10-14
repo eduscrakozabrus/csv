@@ -144,6 +144,12 @@ class PdfExporter(Exporter):
         story.append(Paragraph("WORK EXPERIENCE", styles["Section"]))
         story.extend(self._experience_blocks(resume, styles))
 
+        if resume.closing_statement:
+            story.append(Spacer(1, 8 * mm))
+            story.append(HRFlowable(width="100%", thickness=1, lineCap="round", color=colors.HexColor("#d0d6dc")))
+            story.append(Spacer(1, 4 * mm))
+            story.append(Paragraph(resume.closing_statement, styles["Body"]))
+
         return story
 
     def _skills_table(self, resume: ComposedResume, styles):

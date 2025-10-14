@@ -92,11 +92,26 @@ def _cmd_build(args, loader: TemplateLoader, composer: ResumeComposer):
 
     exporter = registry.create(args.export)
     args.out.mkdir(parents=True, exist_ok=True)
+    file_ext = args.export if args.export != "markdown" else "md"
+
+    filename: str
     if args.filename:
         filename = args.filename
+        if not filename.lower().endswith(f".{file_ext}"):
+            filename = f"{filename}.{file_ext}"
     else:
-        safe_name = config.template.replace("_", "-")
-        filename = f"{safe_name}.{args.export if args.export != 'markdown' else 'md'}"
+        custom = None
+        if config.output and isinstance(config.output, dict):
+            custom_value = config.output.get("filename")
+            if isinstance(custom_value, str) and custom_value.strip():
+                custom = custom_value.strip()
+        if custom:
+            filename = custom
+            if not filename.lower().endswith(f".{file_ext}"):
+                filename = f"{filename}.{file_ext}"
+        else:
+            safe_name = config.template.replace("_", "-")
+            filename = f"{safe_name}.{file_ext}"
     destination = args.out / filename
 
     output = exporter.export(resume, destination)

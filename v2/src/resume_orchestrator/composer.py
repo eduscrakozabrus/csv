@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from .data_models import BlocksBundle, ExperienceBlock, TemplateConfig
 from .filters import apply_experience_filters
@@ -14,6 +14,7 @@ class ComposedResume:
     summary: str
     skills: Dict[str, List[str]]
     experience: List[ExperienceBlock]
+    closing_statement: Optional[str] = None
 
 
 class ResumeComposer:
@@ -45,6 +46,7 @@ class ResumeComposer:
             summary=summary,
             skills=skills,
             experience=exp,
+            closing_statement=config.closing_statement,
         )
 
     def _resolve_summary(self, config: TemplateConfig) -> str:

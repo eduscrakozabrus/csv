@@ -68,7 +68,7 @@ class ExperienceBlock(BaseModel):
         return "present" in period_lower or "current" in period_lower or "current" in self.tags
 
     def start_year(self) -> int:
-        years = re.findall(r"(19|20)\d{2}", self.period)
+        years = re.findall(r"(?:19|20)\d{2}", self.period)
         if years:
             try:
                 return int(years[0])
@@ -104,3 +104,5 @@ class TemplateConfig(BaseModel):
     skill_levels: List[SkillLevel]
     filters: Dict[str, object] = Field(default_factory=dict)
     options: Dict[str, object] = Field(default_factory=dict)
+    closing_statement: Optional[str] = None
+    output: Optional[Dict[str, object]] = None

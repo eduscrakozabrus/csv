@@ -51,5 +51,9 @@ class MarkdownExporter(Exporter):
                     lines.append(f"  - {achievement}")
             lines.append("")
 
-        return "\n".join(lines).rstrip() + "\n"
+        if resume.closing_statement:
+            lines.append("---")
+            lines.append(resume.closing_statement)
+            lines.append("")
 
+        return "\n".join(lines).rstrip() + "\n"
